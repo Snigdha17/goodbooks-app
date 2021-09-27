@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap");
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1529473814998-077b4fec6770?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2940&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #00000070;
+  padding: 1rem;
+  margin: 3rem auto;
+  width: 80%;
+  border-radius: 0.5rem;
+  border: 0.5px solid wheat;
+}
+h1,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: large;
+  border: 1px solid white;
+  border-radius: 0.2rem;
+  margin: auto 1rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  color: black;
+  background-color: #ffffff90;
+}
+#books-list {
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  width: 70%;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+#book-name {
+  font-size: larger;
+}
+
+#book-rating {
+  font-size: smaller;
+}
+
+#author {
+  font-size: medium;
+}
+
+#genreDisplay {
+  margin: 2rem 1rem;
+}
