@@ -5,28 +5,67 @@ const books = {
   fiction: [
     {
       name: "Thousand Splendid Suns",
+      description: "A glimpse of life in Kabul under the Taliban",
       author: "Khaled Hussaini",
       rating: "⭐⭐⭐⭐⭐"
     },
     {
       name: "Where the Crawdads Sing",
+      description: "A coming-of-age story",
+      author: "Delia Owens",
+      rating: "⭐⭐⭐⭐"
+    },
+    {
+      name: "The Song of Achilles",
+      description: "Homer's Illiad from Patroclus' perspective",
       author: "Delia Owens",
       rating: "⭐⭐⭐⭐"
     }
   ],
 
   nonFiction: [
-    { name: "Educated", author: "Tara Westover", rating: "⭐⭐⭐⭐" },
-    { name: "Wings of Fire", author: "APJ Abdul Kalam", rating: "⭐⭐⭐⭐⭐" }
+    {
+      name: "Educated",
+      description:
+        "The story of a young girl's pursuit of education against all odds",
+      author: "Tara Westover",
+      rating: "⭐⭐⭐⭐"
+    },
+    {
+      name: "Wings of Fire",
+      description:
+        "Life, education and career of Dr. APJ Abdul Kalam, former president of India",
+      author: "Dr. APJ Abdul Kalam",
+      rating: "⭐⭐⭐⭐⭐"
+    },
+    {
+      name: "A Short History of Nearly Everything",
+      description:
+        "Briefly explains nearly everything from the beginning of time in an accessible language",
+      author: "Bill Bryson",
+      rating: "⭐⭐⭐⭐⭐"
+    }
   ],
 
   investing: [
     {
       name: "Psychology of Money",
+      description: "Timeless lessons on wealth, greed and happiness",
       author: "Morgan Housel",
       rating: "⭐⭐⭐⭐⭐"
     },
-    { name: "One up on Wall Street", author: "Peter Lynch", rating: "⭐⭐⭐" }
+    {
+      name: "One up on Wall Street",
+      description: "A beginner's guide to investing in the stock market",
+      author: "Peter Lynch",
+      rating: "⭐⭐⭐⭐"
+    },
+    {
+      name: "Investing for dummies",
+      description: "Financial planning for beginners",
+      author: "Eric Tyson",
+      rating: "⭐⭐⭐"
+    }
   ]
 };
 
@@ -56,6 +95,7 @@ export default function App() {
             <li id="books-list" key={book.name}>
               <div id="book-name"> {book.name} </div>
               <div id="author">By {book.author} </div>
+              <div id="description">{book.description} </div>
               <div id="book-rating"> {book.rating} </div>
             </li>
           ))}
